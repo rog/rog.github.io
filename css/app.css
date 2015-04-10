@@ -373,5 +373,13 @@ header .circle-icon {
 }
 #complementary-info h2:last-child{
     margin-bottom: 10px !important;
+}
+@media (max-width: 992px) {
+  .project_list.half{
+    width: 100%;
+    float: none;
+    clear: noth;
+    margin: 0;
   }
+}
 /*# sourceMappingURL=app.css.map */
