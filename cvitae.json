@@ -1,0 +1,152 @@
+{
+  "personalInfo": {
+    "fullName": "Rogelio Alberto",
+    "email": "i@rog.mx",
+    "avatarUrl": "https://media.licdn.com/media/p/5/005/08a/154/33dbb54.jpg",
+    "description": "<p>I am a Software Engineer who is apassionate about Web Development. I started doing sites in Microsoft Frontpage hosted in Geocities, and now I make systems and webapps synchronized in various servers who can connect to a database or a little gadget that I did with Arduino and show data in real-time with an API that I built.</p><p>I always have been a self-taught person and I like to be in constant knowledge of web technologies. I love programming, I'm the kind of geek who would rather spend time programming a bash script to improve his life.</p><p>I also love JavaScript and my favorite web framework is Node.js with Backbone but every day I fall over React. I am delighted with the Internet of Things and the Maker movement, in my spare time I build things with Arduino or the SparkCore.</p><p>I like teaching, it's my way to give back what I learned, this is why I am member of the <a href=\"http://javascriptmx.com/\" target=\"_blank\">JavaScriptMX</a> community where we promote events like the <a href=\"http://nodeschool.io/mexicocity/\" target=\"_blank\">Nodeschool</a> and <a href=\"http://noders.mx/\" target=\"_blank\">Noders</a> where I can teach to people interested in learning Node.js.</p>"
+  },
+  "cover": {
+    "url": "http://en.wikipedia.org/wiki/Unknown_Pleasures",
+    "attribution": "Unknown Pleasures by Joy Division"
+  },
+  "social": {
+    "github": "rogr",
+    "linkedIn": "https://www.linkedin.com/profile/view?id=285284731"
+  },
+  "profession": {
+      "name": "Web Developer",
+      "location": "Mexico City"
+  },
+  "academic": [
+    {
+      "school": {
+        "name": "Superior School of Computer Sciences (ESCOM)",
+        "url": "http://www.isc.escom.ipn.mx/"
+      },
+      "degree": "BS in Computer Science, Engineer",
+      "location": "Mexico City"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Python (Django)"
+    },
+    {
+      "name": "Unix Shell Scripting"
+    },
+    {
+      "name": "HTML5"
+    },
+    {
+      "name": "SVG"
+    },
+    {
+      "name": "CSS3 (Sass / Compass)"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "PhoneGap/Cordova"
+    },
+    {
+      "name": "PHP (CodeIgniter/WordPress)"
+    },
+    {
+      "name": "Photoshop"
+    }
+  ], 
+  "projects":[
+    {
+      "name": "Grillo",
+      "description":"I built the Grillo Active prototype with Node.js and SparkCore, a revolutionary earthquake early-warning system for 1 billion people.\nWe are creating the largest seismograph deployment in Mexico.\nAfter trialing we will deploy to protect vulnerable cities around the world.",
+      "url": "http://grillo.mx",
+      "images": [{
+        "url": "http://i.imgur.com/cWPGCRP.png",
+        "link": "http://grillo.mx"
+      },{
+        "url": "http://i.imgur.com/sfwRrpX.png",
+        "link": "http://dash.grillo.io"
+      }],
+      "stack":[{
+        "name":"Node.js",
+        "url": "https://nodejs.org/"
+      },{
+        "name": "SparkCore",
+        "url": "https://www.spark.io/"
+      },{
+        "name": "C++",
+        "url": "http://isocpp.org/"
+      }]
+    },
+  	{
+  		"name": "Vive Latino",
+      "description":"The site of the Vive Latino Festival from the last two editions.\nI did everything about web development (backend and the frontend) for the website also I did a lot of servers configuration and  maintenance.",
+  		"url": "http://vivelatino.com.mx",
+      "images": [{
+        "url": "http://i.imgur.com/xuFGxOW.png",
+        "link": "http://vivelatino.com.mx/"
+      },{
+        "url": "http://i.imgur.com/Tdf0wxD.png",
+        "link": "http://vivelatino.com.mx/2014/after"
+      },{
+        "url": "http://i.imgur.com/1HOj7AG.png",
+        "link": "http://vivelatino.com.mx/2014/"
+      }],
+      "stack":[{
+        "name":"Django",
+        "url": "https://www.djangoproject.com/"
+      },{
+        "name": "Backbone",
+        "url": "http://backbonejs.org/"
+      },{
+        "name": "Socket.io",
+        "url": "http://socket.io/"
+      },{
+        "name": "Compass",
+        "url": "http://compass-style.org/"
+      },{
+        "name": "Grunt",
+        "url": "http://gruntjs.com/"
+      }]
+  	},
+  	{
+  		"name": "Noders",
+      "description":"I organize a programming community where we meet once every month to talk about things we can do with the Node.js framework while we drink some beer.",
+  		"url": "http://noders.mx",
+      "images": [{
+        "url": "http://i.imgur.com/xSLDwUs.png",
+        "link": "http://noders.mx"
+      }],
+      "stack":[{
+        "name": "Node.js",
+        "url": "https://nodejs.org/"
+      },{
+        "name":"Beer",
+        "url": "http://i.imgur.com/L7X5Dq8.gifv"
+      }],
+      "half": true
+  	},
+    {
+      "name": "Doctor Experto",
+      "description":"A directory where you can easily find and rate a doctor with details and opinions of other professionals and patients (Beta).",
+      "url": "http://doctorexperto.com",
+      "images": [{
+        "url": "http://i.imgur.com/6MCdUaD.png",
+        "link": "http://doctorexperto.com"
+      }],
+      "stack":[{
+        "name":"CodeIgniter",
+        "url": "http://www.codeigniter.com/"
+      },{
+        "name": "Bootstrap",
+        "url": "http://getbootstrap.com/"
+      }],
+      "half": true
+    }
+
+  ]
+}

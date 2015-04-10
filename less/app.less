@@ -1,0 +1,291 @@
+/* palette */
+@palette-turquoise: #1abc9c;
+@palette-green-sea: #16a085;
+@palette-emerald: #2ecc71;
+@palette-nephritis: #27ae60;
+@palette-peter-river: #3498db;
+@palette-belize-hole: #2980b9;
+@palette-amethyst: #9b59b6;
+@palette-wisteria: #8e44ad;
+@palette-wet-asphalt: #34495e;
+@palette-midnight-blue: #2c3e50;
+@palette-sun-flower: #f1c40f;
+@palette-orange: #f39c12;
+@palette-carrot: #e67e22;
+@palette-pumpkin: #d35400;
+@palette-alizarin: #e74c3c;
+@palette-pomegranate: #c0392b;
+@palette-clouds: #ecf0f1;
+@palette-silver: #bdc3c7;
+@palette-concrete: #95a5a6;
+@palette-asbestos: #7f8c8d;
+
+@level-native: @palette-wet-asphalt;
+@level-expert: @palette-belize-hole;
+@level-advanced: @palette-peter-river;
+@level-intermediate: @palette-turquoise;
+@level-basic: @palette-emerald;
+
+.unstyled-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+
+@avatar-size: 148px;
+
+.avatar {
+  border-radius: 50%;
+  width: @avatar-size;
+  width: @avatar-size;
+  // border: 1px solid white;
+  // border-color: rgba(255, 255, 255, 0.85);
+}
+
+header {
+  background: @palette-midnight-blue url('../images/gdl.jpg') no-repeat no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: black 0px 0px 3px;
+  text-align: center;
+  position: relative;
+  
+  h1 {
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  ul {
+    .unstyled-list();
+  }
+    
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    
+    i.fa {
+      &.fa-envelope {
+        font-size: 85%;
+      }
+    }
+  }
+  
+  a, a:hover, a:active, a:focus {
+    color: white;
+    text-decoration: none;
+  }
+
+  > .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+  .circle-icon {
+    background-color: @palette-peter-river;
+  }
+}
+
+@circle-xsmall-size: 24px;
+@circle-small-size: 32px;
+@circle-medium-size: 42px;
+
+.circle-icon {
+  box-sizing: content-box;
+  border-radius: 50%;
+  text-align: center;
+  text-shadow: none;
+  margin-right: 6px;
+  color: white;
+
+  &.circle-xsmall {
+    width: @circle-xsmall-size;
+    height: @circle-xsmall-size;
+    line-height: @circle-xsmall-size;
+  }
+
+  &.circle-small {
+    width: @circle-small-size;
+    height: @circle-small-size;
+    line-height: @circle-small-size;
+  }
+
+  &.circle-medium {
+    width: @circle-medium-size;
+    height: @circle-medium-size;
+    line-height: @circle-medium-size;
+  }
+
+  &.circle-transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    text-shadow: inherit;
+  }
+}
+
+.period {
+  font-weight: 700;
+  font-size: 24px;
+  color: @palette-silver;
+  line-height: 1.1;
+}
+
+.label.label-current {
+  font-size: 14px;
+  color: @palette-emerald;
+  border: 1px solid @palette-emerald;
+  font-weight: normal;
+}
+
+#professional-experience, #academic-background, #complementary-info {
+  margin-top: 60px;
+  
+  h2 {
+    i {
+      position: relative;
+      top: -0.2em;
+
+      &.fa-wrench {
+        font-size: 85%;
+      }
+    }
+    
+    .circle-icon {
+      background-color: @palette-alizarin;
+    }
+  }
+}
+
+.section-title i.circle-icon {
+  font-size: 0.7em;
+}
+
+#skills, #technologies, #languages {
+  margin-bottom: 30px;
+
+  ul {
+    .unstyled-list();
+  }
+}
+
+#personal-info {
+  h2, ul {
+    margin-top: 20px;
+  }
+}
+
+.job, .level {
+  margin-bottom: 30px;
+  
+  &.last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.label-native, .label-expert, .label-advanced, .label-intermediate, .label-basic {
+  border: 1px solid;
+  background-color: white;
+}
+
+.label-native {
+  border-color: @level-native;
+  color: @level-native;
+}
+
+.label-expert {
+  border-color: @level-expert;
+  color: @level-expert;
+}
+
+.label-advanced {
+  border-color: @level-advanced;
+  color: @level-advanced;
+}
+
+.label-intermediate {
+  border-color: @level-intermediate;
+  color: @level-intermediate;
+}
+
+.label-basic {
+  border-color: @level-basic;
+  color: @level-basic;
+}
+
+
+@media (max-width: 767px) {
+  .period {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #professional-experience, #academic-background, #complementary-info {
+    h2 {
+      margin-bottom: 30px;
+
+      i {
+        position: absolute;
+        left: -60px;
+      }
+    }
+  }
+
+  .period, .subtitle {
+    text-align: right;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  #avatar-container {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    text-align: left;
+
+    > .container {
+      padding-top: 180px;
+      padding-bottom: 180px;
+    }
+  }
+
+  #avatar-container {
+   text-align: right;
+  }
+}
+
+@relative-padding: 15px;
+
+#actions, #image-attribution {
+  position: absolute;
+}
+
+#actions {
+  top: @relative-padding;
+  right: @relative-padding;
+}
+
+#image-attribution {
+  bottom: 15px;
+  right: 15px;
+}
