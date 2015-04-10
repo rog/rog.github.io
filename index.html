@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rogelio Alberto - Web Developer</title>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" type="text/css">
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="http://rog.mx/favicons/favicon.ico" />
+    <link rel="shortcut icon" href="http://rog.mx/favicons/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <script>
+      if(/github\.io/.test(window.location.hostname)) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-55098418-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+  </head>
+
+  <body ng-app="Cvitae" ng-controller="CvitaeCtrl">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div id="avatar-container" class="col-md-3">
+            <img class="avatar" ng-src="{{ cvitae.personalInfo.avatarUrl }}"
+              alt="{{ cvitae.personalInfo.fullName }}">
+          </div>
+          <div id="personal-info" class="col-md-9">
+            <h1>{{ cvitae.personalInfo.fullName }}</h1>
+            
+            <h2>
+              {{ cvitae.profession.name }}
+            </h2>
+              
+            <ul>
+              <li>
+                <i class="fa fa-map-marker circle-icon circle-small"></i> {{ cvitae.profession.location }}
+              </li>
+              <li>
+                <a ng-href="http://github.com/{{ cvitae.social.github }}" target="blank">
+                  <i class="fa fa-github circle-icon circle-small"></i>
+                </a>
+              </li>
+              <li>
+                <a ng-href="{{ cvitae.social.linkedIn }}" target="blank">
+                  <i class="fa fa-linkedin circle-icon circle-small"></i>
+                </a>
+              </li>
+              <li>
+                <a ng-href="mailto:{{ cvitae.personalInfo.email }}" target="blank">
+                  <i class="fa fa-envelope circle-icon circle-small"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="actions">
+        <a href="https://github.com/{{ cvitae.social.github }}/{{ cvitae.social.github }}.github.io" target="blank" title="View on GitHub">
+          <i class="fa fa-code circle-icon circle-small circle-transparent"></i>
+        </a>
+        <a href="#" target="blank" title="Download CV in PDF">
+          <i class="fa fa-file-pdf-o circle-icon circle-small circle-transparent"></i>
+        </a>
+      </div>
+
+      <!--<div id="image-attribution">
+        <a ng-href="{{ cvitae.cover.url }}">
+          <i class="fa fa-camera circle-icon circle-small circle-transparent"></i>
+          {{ cvitae.cover.attribution }}
+        </a>
+      </div>-->
+    </header>
+    
+    <div class="container">
+      <section id="personal-description">
+      <div class="row">
+          <div class="col-sm-9 col-sm-offset-3 col-desc">
+              <div ng-bind-html="cvitae.personalInfo.description|rawHtml"></div>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section id="professional-experience">
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3">
+            <h2 class="section-title"><i class="fa fa-fw fa-briefcase circle-icon circle-medium"></i>
+              Professional experience</h2>
+          </div>
+        </div>
+
+        <div class="job row" ng-repeat="job in cvitae.experience">
+          <div class="period col-sm-3">
+            <div>
+              {{ job.start | date:'yyyy' }} <span ng-if="job.end">— {{ job.end | date:'yyyy' }}</span>
+            </div>
+            <span ng-if="job.isCurrent" class="label label-current">current</span>
+          </div>
+          <div class="col-sm-9">
+            <h3>
+              <a ng-href="{{ job.company.url }}">{{ job.company.name }}</a>
+              <a ng-if="job.company.linkedInUrl" ng-href="{{ job.company.linkedInUrl }}">
+                <i class="fa fa-linkedin-square"></i></a>
+            </h3>
+            <p>{{ job.position }}</p>
+            <p>{{ job.location }}</p>
+          </div>
+        </div>
+      </section>
+      -->
+      <section id="academic-background">
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3">
+            <h2 class="section-title"><i class="fa fa-fw fa-graduation-cap circle-icon circle-medium"></i>
+              Academic background</h2>
+          </div>
+        </div>
+
+        <div class="level row" ng-repeat="level in cvitae.academic">
+          <div class="period col-sm-3">
+            {{ level.start | date:'yyyy' }} <span ng-if="level.end">— {{ level.end | date:'yyyy' }}</span>
+              <span ng-if="level.isCurrent" class="label label-current">current</span>
+          </div>
+          <div class="col-sm-9">
+            <h3><a ng-href="{{ level.school.url }}">{{ level.school.name }}</a></h3>
+            <p ng-if="level.school.parentOrganization">{{ level.school.parentOrganization }}</p>
+            <p>{{ level.degree }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="complementary-info">
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3">
+            <h2><i class="fa fa-fw fa-code circle-icon circle-medium"></i>  Technologies</h2>
+          </div>
+        </div>
+
+        <section id="technologies" class="row">
+          <div class="col-sm-3 subtitle">
+          </div>
+
+          <div class="col-sm-9">
+            <ul id="technologies_list">
+              <li ng-repeat="technology in cvitae.technologies">
+                {{ technology.name }}
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+      <section id="complementary-info">
+        <div class="row">
+          <div class="col-sm-9 col-sm-offset-3">
+            <h2><i class="fa fa-fw fa-briefcase circle-icon circle-medium"></i>  Projects</h2>
+          </div>
+        </div>
+
+        <section id="projects" class="row">
+          <div class="col-sm-3 subtitle">
+          </div>
+
+          <div class="col-sm-9">
+            <ul>
+              <li ng-repeat="project in cvitae.projects" class="project_list {{project.half ? 'half' : 'full'}}">
+                  <a href="{{project.url}}" target="_blank"><p class="name">{{ project.name }}</p></a>
+                  <div ng-if="project.stack" class="project_stack">
+                    <p>Stack: <span ng-repeat="stack in project.stack"><a href="{{stack.url}}" target="_blank">{{stack.name}}</a></span></p>
+                  </div>
+                  <p class="description">{{ project.description }}</p>
+                  <div ng-repeat="img in project.images">
+                    <a href="{{img.link}}" target="_blank" class="img_project">
+                      <img src="{{img.url}}" />
+                    </a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+    </div>
+  </body>
+</html>
