@@ -30,7 +30,7 @@ document.addEventListener('scroll', function (event) {
 		}
 		if( document.body.scrollTop > offset_height ){
 			sticky.className = 'sticky';
-			cv.style.paddingTop = '290px';
+			cv.style.paddingTop = '320px';
 		} else {
 			sticky.className = '';
 			cv.style.paddingTop = 0;
