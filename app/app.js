@@ -26,7 +26,7 @@ document.addEventListener('scroll', function (event) {
 			direction = 1;
 		}
 		if ( !direction ){
-			offset_height = offset_height - 120;
+			offset_height = offset_height - 90;
 		}
 		if( document.body.scrollTop > offset_height ){
 			sticky.className = 'sticky';
