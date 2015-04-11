@@ -1,5 +1,17 @@
 <!doctype html>
 <html>
+<!--
+        ##          ##
+          ##      ##
+        ##############
+      ####  ######  ####
+    ######################
+    ##  ##############  ## 
+    ##  ##          ##  ##
+          ####  ####
+
+          Oh, Hello! 
+-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +43,7 @@
   </head>
 
   <body ng-app="Cvitae" ng-controller="CvitaeCtrl">
-    <header>
+    <header id="me">
       <div class="container">
         <div class="row">
           <div id="avatar-container" class="col-md-3">
@@ -44,8 +56,7 @@
             <h2>
               {{ cvitae.profession.name }}
             </h2>
-              
-            <ul>
+            <ul id="links">
               <li>
                 <i class="fa fa-map-marker circle-icon circle-small"></i> {{ cvitae.profession.location }}
               </li>
@@ -77,16 +88,9 @@
           <i class="fa fa-file-pdf-o circle-icon circle-small circle-transparent"></i>
         </a>
       </div>
-
-      <!--<div id="image-attribution">
-        <a ng-href="{{ cvitae.cover.url }}">
-          <i class="fa fa-camera circle-icon circle-small circle-transparent"></i>
-          {{ cvitae.cover.attribution }}
-        </a>
-      </div>-->
     </header>
     
-    <div class="container">
+    <div id="cv" class="container">
       <section id="personal-description">
       <div class="row">
           <div class="col-sm-9 col-sm-offset-3 col-desc">
@@ -94,34 +98,6 @@
           </div>
         </div>
       </section>
-      <!--
-      <section id="professional-experience">
-        <div class="row">
-          <div class="col-sm-9 col-sm-offset-3">
-            <h2 class="section-title"><i class="fa fa-fw fa-briefcase circle-icon circle-medium"></i>
-              Professional experience</h2>
-          </div>
-        </div>
-
-        <div class="job row" ng-repeat="job in cvitae.experience">
-          <div class="period col-sm-3">
-            <div>
-              {{ job.start | date:'yyyy' }} <span ng-if="job.end">— {{ job.end | date:'yyyy' }}</span>
-            </div>
-            <span ng-if="job.isCurrent" class="label label-current">current</span>
-          </div>
-          <div class="col-sm-9">
-            <h3>
-              <a ng-href="{{ job.company.url }}">{{ job.company.name }}</a>
-              <a ng-if="job.company.linkedInUrl" ng-href="{{ job.company.linkedInUrl }}">
-                <i class="fa fa-linkedin-square"></i></a>
-            </h3>
-            <p>{{ job.position }}</p>
-            <p>{{ job.location }}</p>
-          </div>
-        </div>
-      </section>
-      -->
       <section id="academic-background">
         <div class="row">
           <div class="col-sm-9 col-sm-offset-3">
@@ -185,7 +161,7 @@
                   <p class="description">{{ project.description }}</p>
                   <div ng-repeat="img in project.images">
                     <a href="{{img.link}}" target="_blank" class="img_project">
-                      <img src="{{img.url}}" />
+                      <img ng-src="{{img.url}}" />
                     </a>
                   </div>
               </li>
