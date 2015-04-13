@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" type="text/css">
     <link rel="stylesheet" href="css/app.css" type="text/css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
     <link rel="icon" type="image/x-icon" href="http://rog.mx/favicons/favicon.ico" />
     <link rel="shortcut icon" href="http://rog.mx/favicons/favicon.ico">
 
@@ -80,11 +81,11 @@
         </div>
       </div>
 
-      <div id="actions">
+      <div id="actions" class="no-print">
         <a href="https://github.com/{{ cvitae.social.github }}/{{ cvitae.social.github }}.github.io" target="blank" title="View on GitHub">
           <i class="fa fa-code circle-icon circle-small circle-transparent"></i>
         </a>
-        <a href="#" target="blank" title="Download CV in PDF">
+        <a id="print_cv" href="#print" target="blank" title="Download CV in PDF">
           <i class="fa fa-file-pdf-o circle-icon circle-small circle-transparent"></i>
         </a>
       </div>

@@ -16,7 +16,7 @@ body {
   font-family: "Lato", "Helvetica Neue", sans-serif;
 }
 .avatar {
- border-radius: 50%;
+  border-radius: 50%;
   width: 170px;
   border: 5px solid rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,45 @@
+
+.no-print {
+  display: none;
+}
+.avatar {
+  border-radius: 0;
+}
+.container{
+  padding: 0 !important;
+}
+header h1 {
+  text-align: left;
+  margin: 0; padding: 0;
+}
+header h2 {
+  text-align: left;  
+  margin: 0; padding: 0;
+}
+header ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0px;
+}
+header li {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+}
+header li i.fa.fa-envelope {
+  font-size: 85%;
+}
+
+#personal-description,
+#professional-experience,
+#academic-background,
+#complementary-info {
+  margin: 0;
+}
+#avatar-container{ float: left;}
+#personal-description p{
+  font-size: 14px;
+}
+#technologies_list li{
+  margin: 5px; 
+}

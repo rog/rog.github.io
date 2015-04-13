@@ -12,6 +12,7 @@ angular.module('Cvitae', [])
       	});
   	}]);
 
+
 var lastScrollTop = 0; 
 document.addEventListener('scroll', function (event) {
 	var sticky =  document.getElementById('me');
@@ -37,4 +38,15 @@ document.addEventListener('scroll', function (event) {
 		}
 		lastScrollTop = st;
 	}
+});
+
+document.addEventListener("DOMContentLoaded", function( event ) { 
+	if(window.location.hash === '#print') {
+		window.print();
+	}
+	document.getElementById('print_cv').addEventListener('click', function ( event ) {
+		event.preventDefault();
+		window.print();
+		return false;
+	}, false);
 });
