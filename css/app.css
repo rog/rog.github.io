@@ -319,7 +319,7 @@ header .circle-icon {
   width: 40%;
   float: left;
   clear: none;
-  margin: 0 20px 0 0;
+  margin: 20px 20px 20px 0;
 }
 .project_list p{
   margin: 5px 0; 
