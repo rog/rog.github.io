@@ -150,7 +150,7 @@
     {
       "name": "Instantdrive",
       "url": "http://instandrive.com.mx",
-      "description":"A webapp where you can order a test drive online, the app track your path from a GPS and shows in realtime, also you can share your video experience.",
+      "description":"A webapp where you can order a test drive online, the app tracks your path from a GPS and shows them in realtime, also you can share your video experience.",
       "images": [{
         "url": "http://i.imgur.com/MxMgwdz.png",
         "link": "http://instandrive.com.mx"
@@ -166,7 +166,7 @@
     },
     {
       "name": "Aeroméxico",
-      "description":"A webapp where you can order a test drive online, the app track your path from a GPS and shows them in realtime, also you can share your video experience.",
+      "description":"I was frontend of the Aeromexico's home page and the Club Premier's website application, optimizing load times, layout and UX.",
       "url": "http://aeromexico.com",
       "images": [{
         "url": "http://i.imgur.com/tFbJVfN.png",
