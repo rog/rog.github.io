@@ -166,8 +166,8 @@
     },
     {
       "name": "Aeroméxico",
-      "description":"I was frontend of the Aeromexico's home page and the Club Premier's website application, optimizing load times, layout and UX.",
-      "link": "http://aeromexico.com",
+      "description":"A webapp where you can order a test drive online, the app track your path from a GPS and shows them in realtime, also you can share your video experience.",
+      "url": "http://aeromexico.com",
       "images": [{
         "url": "http://i.imgur.com/tFbJVfN.png",
         "link": "http://aeromexico.com"
