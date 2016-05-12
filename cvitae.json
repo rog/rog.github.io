@@ -75,21 +75,22 @@
       "description":"Build the new interface of Lanter Desktop app with React, Webpack and NPM scripts",
       "url": "http://getlantern.org",
       "images": [{
-        "url": "http://i.imgur.com/cWPGCRP.png",
-        "link": "#"
+        "url": "http://i.imgur.com/aTmk69X.png",
+        "link": "http://getlantern.org"
       }],
       "stack":[{
         "name":"React.js",
         "url": "https://facebook.github.io/react/"
       }],
-      "half": true
+      "half": true,
+      "print": true
     },
     {
       "name": "Prixz",
       "description":"Build an API for a pharmacies network around the country, manage user access and geolocated products with Elasticsearch.",
       "url": "http://prixz.mx",
       "images": [{
-        "url": "http://i.imgur.com/cWPGCRP.png",
+        "url": "http://i.imgur.com/bdxPf5U.png",
         "link": "#"
       }],
       "stack":[{
@@ -158,7 +159,8 @@
       },{
         "name": "Grunt",
         "url": "http://gruntjs.com/"
-      }]
+      }],
+      "print": true
   	},
   	{
   		"name": "Noders",
@@ -229,7 +231,8 @@
         "name": "jQuery",
         "url": "https://jquery.com/"
       }],
-      "half": true
+      "half": true,
+      "print": true
     }
 
   ]

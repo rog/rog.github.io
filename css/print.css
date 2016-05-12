@@ -2,18 +2,35 @@
 .no-print {
   display: none;
 }
+#avatar-container{
+  float: left;
+  margin: 0 20px 0 0;
+}
 .avatar {
   border-radius: 0;
+  width: 100px;
 }
+
+#personal-info{
+  float: left;
+  width: 60%
+}
+#cv{
+  clear: both;
+}
+
 .container{
-  padding: 0 !important;
+  overflow: auto;
+  padding: 0
 }
 header h1 {
+  font-size: 20px;
   text-align: left;
   margin: 0; padding: 0;
 }
 header h2 {
-  text-align: left;  
+  font-size: 16px;
+  text-align: left;
   margin: 0; padding: 0;
 }
 header ul {
@@ -22,12 +39,9 @@ header ul {
   padding: 0px;
 }
 header li {
-  display: inline-block;
-  margin: 0;
-  font-size: 12px;
-}
-header li i.fa.fa-envelope {
-  font-size: 85%;
+  display: block;
+  margin: 3px 0;
+  font-size: 14px;
 }
 
 #personal-description,
@@ -36,10 +50,75 @@ header li i.fa.fa-envelope {
 #complementary-info {
   margin: 0;
 }
-#avatar-container{ float: left;}
+#academic-background h3{
+  font-size: 16px;
+  font-style: italic;
+}
 #personal-description p{
   font-size: 14px;
 }
+
+#technologies_list {
+  overflow: auto;
+}
 #technologies_list li{
-  margin: 5px; 
+  margin: 0 10px 0 10px; float: left;
+  list-style: none;
+}
+
+#cv section {
+  clear: both;
+  margin: 20px 0;
+}
+
+#cv section h2{
+  font-size: 16px;
+}
+.img_project{
+  display: none !important;
+}
+.project_stack{
+  display: none !important;
+}
+
+#links {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}
+
+
+.fa-globe:before {
+   content: "rog.mx";
+}
+
+.fa-github:before {
+   content: "github.com/rogr";
+}
+
+.fa-envelope:before {
+   content: "i@rog.mx";
+}
+
+ .fa-map-marker, .fa-linkedin {
+   display: none;
+}
+.npminstall {
+  padding: 12px;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.npminstall span.npm {
+  color: #a71d5d
+}
+.npminstall span.save {
+  font-style: italic;
+}
+.npminstall a {
+  color: #0086b3 !important;
+  text-decoration: underline;
 }
