@@ -296,6 +296,7 @@ header .circle-icon {
 @media (max-width: 991px) {
   header li {
     margin-bottom: 15px;
+    margin-right: 10px;
   }
   #avatar-container {
     margin-bottom: 30px;
@@ -306,8 +307,8 @@ header .circle-icon {
     text-align: left;
   }
   header > .container {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
   #avatar-container {
     text-align: right;
