@@ -11,6 +11,7 @@
   },
   "social": {
     "github": "rogr",
+    "website": "https://rog.mx",
     "linkedIn": "https://www.linkedin.com/profile/view?id=285284731"
   },
   "profession": {
@@ -20,7 +21,7 @@
   "academic": [
     {
       "school": {
-        "name": "Superior School of Computer Sciences (ESCOM)",
+        "name": "Superior School of Computer Sciences (IPN - ESCOM)",
         "url": "http://www.isc.escom.ipn.mx/"
       },
       "degree": "BS in Computer Science, Engineer",
@@ -32,10 +33,19 @@
       "name": "JavaScript"
     },
     {
+      "name": "Node.js"
+    },
+    {
+      "name": "React"
+    },
+    {
       "name": "Python (Django)"
     },
     {
       "name": "Unix Shell Scripting"
+    },
+    {
+      "name": "C/C++"
     },
     {
       "name": "HTML5"
@@ -44,7 +54,7 @@
       "name": "SVG"
     },
     {
-      "name": "CSS3 (Sass / Compass)"
+      "name": "CSS"
     },
     {
       "name": "Git"
@@ -58,8 +68,45 @@
     {
       "name": "Photoshop"
     }
-  ], 
+  ],
   "projects":[
+    {
+      "name": "Lantern",
+      "description":"Build the new interface of Lanter Desktop app with React, Webpack and NPM scripts",
+      "url": "http://getlantern.org",
+      "images": [{
+        "url": "http://i.imgur.com/cWPGCRP.png",
+        "link": "#"
+      }],
+      "stack":[{
+        "name":"React.js",
+        "url": "https://facebook.github.io/react/"
+      }],
+      "half": true
+    },
+    {
+      "name": "Prixz",
+      "description":"Build an API for a pharmacies network around the country, manage user access and geolocated products with Elasticsearch.",
+      "url": "http://prixz.mx",
+      "images": [{
+        "url": "http://i.imgur.com/cWPGCRP.png",
+        "link": "#"
+      }],
+      "stack":[{
+        "name":"Node.js",
+        "url": "https://nodejs.org/"
+      },{
+        "name": "Elasticsearch",
+        "url": "https://www.elastic.co/"
+      },{
+        "name": "Hapi.js",
+        "url": "http://hapijs.com/"
+      },{
+        "name": "MongoDB",
+        "url": "https://www.mongodb.org"
+      }],
+      "half": true
+    },
     {
       "name": "Grillo",
       "description":"I built the Grillo Active prototype with Node.js and SparkCore, a revolutionary earthquake early-warning system for 1 billion people.\nWe are creating the largest seismograph deployment in Mexico.\nAfter trialing we will deploy to protect vulnerable cities around the world.",
@@ -69,7 +116,7 @@
         "link": "http://grillo.mx"
       },{
         "url": "http://i.imgur.com/sfwRrpX.png",
-        "link": "http://dash.grillo.io"
+        "link": "http://grillo.mx"
       }],
       "stack":[{
         "name":"Node.js",
@@ -84,7 +131,7 @@
     },
   	{
   		"name": "Vive Latino",
-      "description":"The site of the Vive Latino Festival from the last two editions.\nI did everything about web development (backend and the frontend) for the website also I did a lot of servers configuration and  maintenance.",
+      "description":"The site of the Vive Latino Festival from 2014-2015 editions.\nI did everything about web development (backend and the frontend) for the website also I did a lot of servers configuration and  maintenance.",
   		"url": "http://vivelatino.com.mx",
       "images": [{
         "url": "http://i.imgur.com/xuFGxOW.png",
@@ -116,10 +163,10 @@
   	{
   		"name": "Noders",
       "description":"I organize a programming community where we meet once every month to talk about things we can do with the Node.js framework while we drink some beer.",
-  		"url": "http://noders.mx",
+  		"url": "http://www.meetup.com/es/nodersmx/",
       "images": [{
         "url": "http://i.imgur.com/xSLDwUs.png",
-        "link": "http://noders.mx"
+        "link": "http://www.meetup.com/es/nodersmx/"
       }],
       "stack":[{
         "name": "Node.js",
@@ -166,7 +213,7 @@
     },
     {
       "name": "Aeroméxico",
-      "description":"I was frontend of the Aeromexico's home page and the Club Premier's website application, optimizing load times, layout and UX.",
+      "description":"I was frontend developer of the Aeromexico's home page and the Club Premier's website application, optimizing load times, layout and UX.",
       "url": "http://aeromexico.com",
       "images": [{
         "url": "http://i.imgur.com/tFbJVfN.png",

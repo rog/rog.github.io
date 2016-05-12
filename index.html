@@ -6,11 +6,11 @@
         ##############
       ####  ######  ####
     ######################
-    ##  ##############  ## 
+    ##  ##############  ##
     ##  ##          ##  ##
           ####  ####
 
-          Oh, Hello! 
+          Oh, Hello!
 -->
   <head>
     <meta charset="utf-8">
@@ -53,7 +53,7 @@
           </div>
           <div id="personal-info" class="col-md-9">
             <h1>{{ cvitae.personalInfo.fullName }}</h1>
-            
+
             <h2>
               {{ cvitae.profession.name }}
             </h2>
@@ -64,6 +64,11 @@
               <li>
                 <a ng-href="http://github.com/{{ cvitae.social.github }}" target="blank">
                   <i class="fa fa-github circle-icon circle-small"></i>
+                </a>
+              </li>
+              <li>
+                <a ng-href="{{ cvitae.social.website }}" target="blank">
+                  <i class="fa fa-globe circle-icon circle-small"></i>
                 </a>
               </li>
               <li>
@@ -90,11 +95,12 @@
         </a>
       </div>
     </header>
-    
+
     <div id="cv" class="container">
       <section id="personal-description">
       <div class="row">
           <div class="col-sm-9 col-sm-offset-3 col-desc">
+            <div class="npminstall"><span class="npm">npm</span> install <span class="save">--save-dev</span> <a href="https://www.npmjs.com/package/rog3r" target="blank">rog3r</a></div>
               <div ng-bind-html="cvitae.personalInfo.description|rawHtml"></div>
           </div>
         </div>
@@ -155,13 +161,13 @@
           <div class="col-sm-9">
             <ul>
               <li ng-repeat="project in cvitae.projects" class="project_list {{project.half ? 'half' : 'full'}}">
-                  <a href="{{project.url}}" target="_blank"><p class="name">{{ project.name }}</p></a>
+                  <a href="{{project.url}}" rel="nofollow" target="_blank"><p class="name">{{ project.name }}</p></a>
                   <div ng-if="project.stack" class="project_stack">
                     <p>Stack: <span ng-repeat="stack in project.stack"><a href="{{stack.url}}" target="_blank">{{stack.name}}</a></span></p>
                   </div>
                   <p class="description">{{ project.description }}</p>
                   <div ng-repeat="img in project.images">
-                    <a href="{{img.link}}" target="_blank" class="img_project">
+                    <a href="{{img.link}}" rel="nofollow" target="_blank" class="img_project">
                       <img ng-src="{{img.url}}" />
                     </a>
                   </div>

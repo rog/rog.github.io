@@ -112,7 +112,7 @@ header .circle-icon {
   transition: border 500ms linear;
 }
 .circle-icon.circle-transparent:hover{
-    opacity: 1;
+  opacity: 1;
 
   -webkit-transition: opacity 1000ms linear;
   -moz-transition: opacity 1000ms linear;
@@ -137,6 +137,30 @@ header .circle-icon {
   color: #ffcc00;
   border: 1px solid #ffcc00;
   font-weight: normal;
+}
+.npminstall {
+  margin: -10px auto 30px auto;
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 320px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.npminstall span.npm {
+  color: #a71d5d
+}
+.npminstall span.save {
+  font-style: italic;
+}
+.npminstall a {
+  color: #0086b3 !important;
+  text-decoration: underline;
+}
+.npminstall a:hover {
+  color: #999 !important
 }
 #personal-description .col-desc{
   margin-left: 0px;
@@ -302,7 +326,7 @@ header .circle-icon {
   right: 15px;
 }
 .fa-heart {
-  font-size: 20px; 
+  font-size: 20px;
 }
 #projects ul {
   margin: 0px 0px 0px;
@@ -322,7 +346,7 @@ header .circle-icon {
   margin: 20px 20px 20px 0;
 }
 .project_list p{
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 .project_list .name{
   font-size: 20px;
