@@ -75,7 +75,7 @@
       "description":"Build the new interface of Lanter Desktop app with React, Webpack and NPM scripts",
       "url": "http://getlantern.org",
       "images": [{
-        "url": "http://i.imgur.com/aTmk69X.png",
+        "url": "https://i.imgur.com/aTmk69X.png",
         "link": "http://getlantern.org"
       }],
       "stack":[{
@@ -90,7 +90,7 @@
       "description":"Build an API for a pharmacies network around the country, manage user access and geolocated products with Elasticsearch.",
       "url": "http://prixz.mx",
       "images": [{
-        "url": "http://i.imgur.com/bdxPf5U.png",
+        "url": "https://i.imgur.com/bdxPf5U.png",
         "link": "#"
       }],
       "stack":[{
@@ -113,10 +113,10 @@
       "description":"I built the Grillo Active prototype with Node.js and SparkCore, a revolutionary earthquake early-warning system for 1 billion people.\nWe are creating the largest seismograph deployment in Mexico.\nAfter trialing we will deploy to protect vulnerable cities around the world.",
       "url": "http://grillo.mx",
       "images": [{
-        "url": "http://i.imgur.com/cWPGCRP.png",
+        "url": "https://i.imgur.com/cWPGCRP.png",
         "link": "http://grillo.mx"
       },{
-        "url": "http://i.imgur.com/sfwRrpX.png",
+        "url": "https://i.imgur.com/sfwRrpX.png",
         "link": "http://grillo.mx"
       }],
       "stack":[{
@@ -135,13 +135,13 @@
       "description":"The site of the Vive Latino Festival from 2014-2015 editions.\nI did everything about web development (backend and the frontend) for the website also I did a lot of servers configuration and  maintenance.",
   		"url": "http://vivelatino.com.mx",
       "images": [{
-        "url": "http://i.imgur.com/xuFGxOW.png",
+        "url": "https://i.imgur.com/xuFGxOW.png",
         "link": "http://vivelatino.com.mx/"
       },{
-        "url": "http://i.imgur.com/Tdf0wxD.png",
+        "url": "https://i.imgur.com/Tdf0wxD.png",
         "link": "http://vivelatino.com.mx/2014/after"
       },{
-        "url": "http://i.imgur.com/1HOj7AG.png",
+        "url": "https://i.imgur.com/1HOj7AG.png",
         "link": "http://vivelatino.com.mx/2014/"
       }],
       "stack":[{
@@ -167,7 +167,7 @@
       "description":"I organize a programming community where we meet once every month to talk about things we can do with the Node.js framework while we drink some beer.",
   		"url": "http://www.meetup.com/es/nodersmx/",
       "images": [{
-        "url": "http://i.imgur.com/xSLDwUs.png",
+        "url": "https://i.imgur.com/xSLDwUs.png",
         "link": "http://www.meetup.com/es/nodersmx/"
       }],
       "stack":[{
@@ -175,7 +175,7 @@
         "url": "https://nodejs.org/"
       },{
         "name":"Beer",
-        "url": "http://i.imgur.com/L7X5Dq8.gifv"
+        "url": "https://i.imgur.com/L7X5Dq8.gifv"
       }],
       "half": true
   	},
@@ -184,7 +184,7 @@
       "description":"A directory where you can easily find and rate a doctor with details and opinions of other professionals and patients (Beta).",
       "url": "http://doctorexperto.com",
       "images": [{
-        "url": "http://i.imgur.com/6MCdUaD.png",
+        "url": "https://i.imgur.com/6MCdUaD.png",
         "link": "http://doctorexperto.com"
       }],
       "stack":[{
@@ -201,7 +201,7 @@
       "url": "http://instandrive.com.mx",
       "description":"A webapp where you can order a test drive online, the app tracks your path from a GPS and shows them in realtime, also you can share your video experience.",
       "images": [{
-        "url": "http://i.imgur.com/MxMgwdz.png",
+        "url": "https://i.imgur.com/MxMgwdz.png",
         "link": "http://instandrive.com.mx"
       }],
       "stack":[{
@@ -218,7 +218,7 @@
       "description":"I was frontend developer of the Aeromexico's home page and the Club Premier's website application, optimizing load times, layout and UX.",
       "url": "http://aeromexico.com",
       "images": [{
-        "url": "http://i.imgur.com/tFbJVfN.png",
+        "url": "https://i.imgur.com/tFbJVfN.png",
         "link": "http://aeromexico.com"
       }],
       "stack":[{
