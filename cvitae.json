@@ -3,14 +3,14 @@
     "fullName": "Rogelio Alberto",
     "email": "i@rog.mx",
     "avatarUrl": "https://media.licdn.com/media/p/5/005/08a/154/33dbb54.jpg",
-    "description": "<p>I am a Software Engineer who is apassionate about Web Development. I'm a self-taught person and I like to be in constant knowledge of web technologies. My passion is programming, I'm the kind of geek who would rather spend time writing a bash script to improve his life.</p><p>I love JavaScript and my favorite web framework is Node.js with React also I'm delighted with the Internet of Things and the Maker movement, in my spare time I build things with Arduino or the ParticleCore.</p><p>I like teaching and <a href=\"https://www.npmjs.com/~rog3r\" target=\"_blank\">sharing</a> what I've learned, this is why I am member of the <a href=\"http://javascriptmx.com/\" target=\"_blank\">JavaScriptMX</a> community where we promote events like the <a href=\"http://nodeschool.io/mexicocity/\" target=\"_blank\">Nodeschool</a> and <a href=\"http://meetup.com/nodersmx\" target=\"_blank\">Noders</a> where I can teach to people interested in learning Node.js.</p>"
+    "description": "<p>I am a Software Engineer who is apassionate about Web Development. I'm a self-taught person and I like to be in constant knowledge of web technologies. My passion is programming, I'm the kind of geek who would rather spend time writing a bash script to improve his life.</p><p>I love JavaScript and my favorite web framework is Node.js with React also I'm delighted with the Internet of Things and the Maker movement, in my spare time I build things with Arduino or the ParticleCore.</p>"
   },
   "cover": {
     "url": "http://en.wikipedia.org/wiki/Unknown_Pleasures",
     "attribution": "Unknown Pleasures by Joy Division"
   },
   "social": {
-    "github": "rogr",
+    "github": "rog",
     "website": "https://rog.mx",
     "linkedIn": "https://www.linkedin.com/profile/view?id=285284731"
   },
@@ -71,11 +71,32 @@
   ],
   "projects":[
     {
+      "name": "Hyperfox",
+      "description":"Build the new desktop app of Hyperfox with React and Electron.\nHyperfox is a security tool for proxying and recording HTTP and HTTPs communications on a LAN.",
+      "url": "https://hyperfox.org/",
+      "images": [{
+        "url": "https://i.imgur.com/TmCLI2C.png",
+        "link": "https://hyperfox.org/"
+      },{
+        "url": "https://i.imgur.com/cNF7n6Q.png",
+        "link": "https://github.com/xiam/hyperfox-live"
+      }],
+      "stack":[{
+        "name":"React.js",
+        "url": "https://facebook.github.io/react/"
+      },{
+        "name":"Electron",
+        "url": "https://electron.atom.io/"
+      }],
+      "half": false,
+      "print": true
+    },
+    {
       "name": "Lantern",
-      "description":"Build the new interface of Lanter Desktop app with React, Webpack and NPM scripts",
+      "description":"Build the new interface of the Lantern Desktop app with React, Webpack and NPM scripts.",
       "url": "http://getlantern.org",
       "images": [{
-        "url": "https://i.imgur.com/aTmk69X.png",
+        "url": "https://i.imgur.com/CPB9o9q.png",
         "link": "http://getlantern.org"
       }],
       "stack":[{
