@@ -78,10 +78,10 @@
       "description":"Build a PWA for PaquetExpress a package delivery company to create deliver orders online with Vue.js and Laravel",
       "url": "https://www.paquetexpress.com.mx",
       "images": [{
-        "url": "https://i.imgur.com/BHFLfSP.png",
+        "url": "https://i.imgur.com/KCrooWU.png",
         "link": "https://www.paquetexpress.com.mx"
       },{
-        "url": "https://i.imgur.com/KCrooWU.png",
+        "url": "https://i.imgur.com/BHFLfSP.png",
         "link": "https://www.paquetexpress.com.mx"
       }],
       "stack":[{
