@@ -39,6 +39,9 @@
       "name": "React"
     },
     {
+      "name": "Vue.js"
+    },
+    {
       "name": "Python (Django)"
     },
     {
@@ -70,6 +73,27 @@
     }
   ],
   "projects":[
+    {
+      "name": "Paquetexpress",
+      "description":"Build the new desktop app of Hyperfox with React and Electron.\nHyperfox is a security tool for proxying and recording HTTP and HTTPs communications on a LAN.",
+      "url": "https://www.paquetexpress.com.mx",
+      "images": [{
+        "url": "https://i.imgur.com/TmCLI2C.png",
+        "link": "https://hyperfox.org/"
+      },{
+        "url": "https://i.imgur.com/cNF7n6Q.png",
+        "link": "https://github.com/xiam/hyperfox-live"
+      }],
+      "stack":[{
+        "name":"Vue.js",
+        "url": "https://vuejs.org/"
+      },{
+        "name":"Laravel",
+        "url": "https://laravel.com/"
+      }],
+      "half": false,
+      "print": true
+    },
     {
       "name": "Hyperfox",
       "description":"Build the new desktop app of Hyperfox with React and Electron.\nHyperfox is a security tool for proxying and recording HTTP and HTTPs communications on a LAN.",
